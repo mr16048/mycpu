@@ -1,0 +1,92 @@
+
+pcnt:     file format elf32-littleriscv
+
+
+Disassembly of section .text.startup:
+
+00000000 <main>:
+   0:	0000f7b7          	lui	a5,0xf
+   4:	0f078793          	addi	a5,a5,240 # f0f0 <main+0xf0f0>
+   8:	0007e50b          	pcnt	a0,a5
+   c:	0000f7b7          	lui	a5,0xf
+  10:	0007e58b          	pcnt	a1,a5
+  14:	c0001073          	unimp
+  18:	00000513          	li	a0,0
+  1c:	00008067          	ret
+
+Disassembly of section .comment:
+
+00000000 <.comment>:
+   0:	3a434347          	fmsub.d	ft6,ft6,ft4,ft7,rmm
+   4:	2820                	.insn	2, 0x2820
+   6:	39386367          	.insn	4, 0x39386367
+   a:	6431                	.insn	2, 0x6431
+   c:	6438                	.insn	2, 0x6438
+   e:	65333263          	.insn	4, 0x65333263
+  12:	2029                	.insn	2, 0x2029
+  14:	3331                	.insn	2, 0x3331
+  16:	322e                	.insn	2, 0x322e
+  18:	302e                	.insn	2, 0x302e
+	...
+
+Disassembly of section .riscv.attributes:
+
+00000000 <.riscv.attributes>:
+   0:	8441                	.insn	2, 0x8441
+   2:	0000                	.insn	2, 0x
+   4:	7200                	.insn	2, 0x7200
+   6:	7369                	.insn	2, 0x7369
+   8:	01007663          	bgeu	zero,a6,14 <main+0x14>
+   c:	007a                	.insn	2, 0x007a
+   e:	0000                	.insn	2, 0x
+  10:	1004                	.insn	2, 0x1004
+  12:	7205                	.insn	2, 0x7205
+  14:	3376                	.insn	2, 0x3376
+  16:	6932                	.insn	2, 0x6932
+  18:	7032                	.insn	2, 0x7032
+  1a:	5f31                	.insn	2, 0x5f31
+  1c:	3266                	.insn	2, 0x3266
+  1e:	3270                	.insn	2, 0x3270
+  20:	645f 7032 5f32      	.insn	6, 0x5f327032645f
+  26:	3176                	.insn	2, 0x3176
+  28:	3070                	.insn	2, 0x3070
+  2a:	7a5f 6369 7273      	.insn	6, 0x727363697a5f
+  30:	7032                	.insn	2, 0x7032
+  32:	5f30                	.insn	2, 0x5f30
+  34:	767a                	.insn	2, 0x767a
+  36:	3365                	.insn	2, 0x3365
+  38:	6632                	.insn	2, 0x6632
+  3a:	7031                	.insn	2, 0x7031
+  3c:	5f30                	.insn	2, 0x5f30
+  3e:	767a                	.insn	2, 0x767a
+  40:	3365                	.insn	2, 0x3365
+  42:	7832                	.insn	2, 0x7832
+  44:	7031                	.insn	2, 0x7031
+  46:	5f30                	.insn	2, 0x5f30
+  48:	767a                	.insn	2, 0x767a
+  4a:	3665                	.insn	2, 0x3665
+  4c:	6434                	.insn	2, 0x6434
+  4e:	7031                	.insn	2, 0x7031
+  50:	5f30                	.insn	2, 0x5f30
+  52:	767a                	.insn	2, 0x767a
+  54:	3665                	.insn	2, 0x3665
+  56:	6634                	.insn	2, 0x6634
+  58:	7031                	.insn	2, 0x7031
+  5a:	5f30                	.insn	2, 0x5f30
+  5c:	767a                	.insn	2, 0x767a
+  5e:	3665                	.insn	2, 0x3665
+  60:	7834                	.insn	2, 0x7834
+  62:	7031                	.insn	2, 0x7031
+  64:	5f30                	.insn	2, 0x5f30
+  66:	767a                	.insn	2, 0x767a
+  68:	316c                	.insn	2, 0x316c
+  6a:	3832                	.insn	2, 0x3832
+  6c:	3162                	.insn	2, 0x3162
+  6e:	3070                	.insn	2, 0x3070
+  70:	7a5f 6c76 3233      	.insn	6, 0x32336c767a5f
+  76:	3162                	.insn	2, 0x3162
+  78:	3070                	.insn	2, 0x3070
+  7a:	7a5f 6c76 3436      	.insn	6, 0x34366c767a5f
+  80:	3162                	.insn	2, 0x3162
+  82:	3070                	.insn	2, 0x3070
+	...
